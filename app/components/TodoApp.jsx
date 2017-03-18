@@ -32,7 +32,7 @@ var TodoApp = React.createClass({
 		});
 	},
 	handleToggle: function(id) {
-		var updatedTogos = this.state.todos.map((todo) => {
+		var updatedTodos = this.state.todos.map((todo) => {
 			if (id === todo.id) {
 				todo.completed = !todo.completed;
 				todo.completedAt = todo.completed ? moment().unix() : undefined;
@@ -42,7 +42,7 @@ var TodoApp = React.createClass({
 		});
 
 		this.setState({
-			todos: updatedTogos
+			todos: updatedTodos
 		});
 	},
 	handleSearch: function(showCompleted, searchText) {
