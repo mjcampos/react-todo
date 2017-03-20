@@ -3,7 +3,7 @@ var uuid = require('node-uuid');
 var moment = require('moment');
 import TodoList from 'TodoList';
 import AddTodo from 'AddTodo';
-var Search = require('Search');
+import Search from 'Search';
 var TodoAPI = require('TodoAPI');
 
 var TodoApp = React.createClass({
